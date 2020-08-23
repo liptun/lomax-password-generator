@@ -14,7 +14,7 @@ const stageTable = [
   {stage: 13, b1: 0, b2: 3, b3: 0, b4: 1},
   {stage: 14, b1: 1, b2: 3, b3: 1, b4: 1},
   {stage: 15, b1: 2, b2: 3, b3: 2, b4: 1},
-  {stage: 16, b1: 3, b2: 3, b3: 3, b4: 0},
+  {stage: 16, b1: 3, b2: 3, b3: 3, b4: 1},
   {stage: 17, b1: 0, b2: 0, b3: 1, b4: 0},
   {stage: 18, b1: 1, b2: 0, b3: 0, b4: 0},
   {stage: 19, b1: 2, b2: 0, b3: 3, b4: 0},
