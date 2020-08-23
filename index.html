@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomax pass</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="app.js" defer></script>
+  <style>
+    h2 {margin: 0;}
+    footer {color: #afafaf}
+    .password {
+      font-weight: 700;
+      padding: 15px 0;
+      font-size: 2em;
+    }
+    select {
+      font-size: 1.4em;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Lomax password generator</h1>
+    <label for="stage">Stage</label>
+    <select v-model.number="stage" id="stage">
+      <option v-for="i in 22">{{ i }}</option>
+    </select>
+    <label for="lives">Lives</label>
+    <select v-model.number="lives" id="lives">
+      <option v-for="i in 32">{{ i - 1 }}</option>
+    </select>
+    <label for="continues">Continues</label>
+    <select v-model.number="continues" id="continues">
+      <option v-for="i in 4">{{ i - 1 }}</option>
+    </select>
+
+    <div class="password">
+      {{ getIcon(passwd1) }}
+      {{ getIcon(passwd2) }}
+      {{ getIcon(passwd3) }}
+      {{ getIcon(passwd4) }}
+      {{ getIcon(passwd5) }}
+      {{ getIcon(passwd6) }}
+      {{ getIcon(passwd7) }}
+      {{ getIcon(passwd8) }}
+    </div>
+
+    <footer><p>Liptun 2020</p><p>system by moron_erick & victoria torzar</p></footer>
+
+  </div>
+</body>
+</html>
